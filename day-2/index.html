@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Đây là website của tôi">
+
+    <title>My Website</title>
+
+    <style>
+        table th,
+        table td {
+            border: 1px solid black;
+        }
+
+        .login-form label {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .login-form .password-label {
+            color: red;
+            text-transform: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border: 1px solid black;">
+        <thead>
+            <tr>
+                <th>Cột 1</th>
+                <th>Cột 2</th>
+                <th>Cột 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nội dung 1</td>
+                <td>Nội dung 2</td>
+                <td>Nội dung 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#" class="login-form">
+        <div>
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="phone">Số của bạn</label>
+            <input type="number" id="phone">
+        </div>
+        <div>
+            <label for="email">Email của bạn</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="password" class="password-label">password của bạn</label>
+            <input type="password" id="password">
+        </div>
+    </form>
+</body>
+
+</html>

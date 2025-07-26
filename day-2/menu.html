@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        header nav ul li {
+            list-style-type: none;
+            margin-right: 16px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .menu-item{
+            color: black;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            margin-top: 30px;
+        }
+
+        .food-item{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 49%;
+            margin-top: 8px;
+        }
+
+        .food-image {
+            max-width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .food-detail{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        .food-name {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://facebook.com" class="menu-item">Đồ nhật</a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" class="menu-item">Đồ Hàn</a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" class="menu-item">Cơm quê Việt</a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" class="menu-item">Đồ Âu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
+                <div class="food-detail">
+                    <div class="food-name">Món ăn 1</div>
+                    <div class="food-price">1.222.00 đ</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
+                <div class="food-detail">
+                    <div class="food-name">Món ăn 1</div>
+                    <div class="food-price">1.222.00 đ</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
+                <div class="food-detail">
+                    <div class="food-name">Món ăn 1</div>
+                    <div class="food-price">1.222.00 đ</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
+                <div class="food-detail">
+                    <div class="food-name">Món ăn 1</div>
+                    <div class="food-price">1.222.00 đ</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
