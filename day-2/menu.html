@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <style>
-        body {
-            padding-left: 100px;
-            padding-right: 100px;
+        .container {
+            /* padding-left: 200px;
+            padding-right: 200px; */
+            background-color: #E3E0D5;
+            border: 5px dashed black;
+
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 60px;
         }
 
         header nav ul li {
@@ -24,9 +30,10 @@
         header nav {
             border: 1px solid black;
             border-radius: 10px;
+            background-color: white;
         }
 
-        .menu-item{
+        .menu-item {
             color: black;
             text-decoration: none;
         }
@@ -34,26 +41,32 @@
         .content {
             display: flex;
             flex-wrap: wrap;
-            justify-content:space-between;
+            justify-content: space-between;
             margin-top: 30px;
+
         }
 
-        .food-item{
+        .food-item {
             border: 1px solid black;
             border-radius: 10px;
-            width: 49%;
-            margin-top: 8px;
+            flex: 0 0 calc(50% - 48px);
+            margin-top: 48px;
+            width: 100%;
         }
 
         .food-image {
-            max-width: 100%;
+            width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            display: block;
         }
 
-        .food-detail{
+        .food-detail {
             padding-left: 10px;
             padding-bottom: 10px;
+            background-color: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         .food-name {
@@ -63,57 +76,63 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://facebook.com" class="menu-item">Đồ nhật</a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" class="menu-item">Đồ Hàn</a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" class="menu-item">Cơm quê Việt</a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" class="menu-item">Đồ Âu</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://facebook.com" class="menu-item">Đồ nhật</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="menu-item">Đồ Hàn</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="menu-item">Cơm quê Việt</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="menu-item">Đồ Âu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <div class="content">
-            <div class="food-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
-                <div class="food-detail">
-                    <div class="food-name">Món ăn 1</div>
-                    <div class="food-price">1.222.00 đ</div>
+        <main>
+            <div class="content">
+                <div class="food-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s"
+                        alt="Food name" class="food-image">
+                    <div class="food-detail">
+                        <div class="food-name">Món ăn 1</div>
+                        <div class="food-price">1.222.00 đ</div>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s"
+                        alt="Food name" class="food-image">
+                    <div class="food-detail">
+                        <div class="food-name">Món ăn 1</div>
+                        <div class="food-price">1.222.00 đ</div>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s"
+                        alt="Food name" class="food-image">
+                    <div class="food-detail">
+                        <div class="food-name">Món ăn 1</div>
+                        <div class="food-price">1.222.00 đ</div>
+                    </div>
+                </div>
+                <div class="food-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s"
+                        alt="Food name" class="food-image">
+                    <div class="food-detail">
+                        <div class="food-name">Món ăn 1</div>
+                        <div class="food-price">1.222.00 đ</div>
+                    </div>
                 </div>
             </div>
-            <div class="food-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
-                <div class="food-detail">
-                    <div class="food-name">Món ăn 1</div>
-                    <div class="food-price">1.222.00 đ</div>
-                </div>
-            </div>
-            <div class="food-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
-                <div class="food-detail">
-                    <div class="food-name">Món ăn 1</div>
-                    <div class="food-price">1.222.00 đ</div>
-                </div>
-            </div>
-            <div class="food-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3jTszSflQt-SjZGIWqJRegF0GrAVzpCQtg&s" alt="Food name" class="food-image">
-                <div class="food-detail">
-                    <div class="food-name">Món ăn 1</div>
-                    <div class="food-price">1.222.00 đ</div>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
